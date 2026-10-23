@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "me_omnibus:gui/ae2_1211/item/card_equal_distribution"
+  }
+}

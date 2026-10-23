@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="LGPL-3.0-only; AE2 assets: CC-BY-NC-SA-3.0"
+[[mods]]
+modId="me_omnibus"
+version="${version}"
+displayName="ME Bus Terminal"
+authors="syarukasu"
+description="Remote management of AE2 storage, import and export bus settings. No additional item transport."
+[[dependencies.me_omnibus]]
+modId="neoforge"
+type="required"
+versionRange="[21.1,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.me_omnibus]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.21.2)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.me_omnibus]]
+modId="ae2"
+type="required"
+versionRange="[19.2.17,)"
+ordering="AFTER"
+side="BOTH"

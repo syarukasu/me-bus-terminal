@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IBX",
+    "SCS",
+    "QRQ"
+  ],
+  "key": {
+    "I": {
+      "item": "ae2:import_bus"
+    },
+    "B": {
+      "item": "ae2:terminal"
+    },
+    "X": {
+      "item": "ae2:export_bus"
+    },
+    "S": {
+      "item": "ae2:fluix_crystal"
+    },
+    "C": {
+      "item": "ae2:storage_bus"
+    },
+    "Q": {
+      "item": "minecraft:iron_ingot"
+    },
+    "R": {
+      "item": "ae2:engineering_processor"
+    }
+  },
+  "result": {
+    "item": "me_omnibus:terminal",
+    "count": 1
+  }
+}

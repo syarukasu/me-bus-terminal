@@ -1,0 +1,11 @@
+.gradle/
+**/build/
+**/run/
+**/run-server/
+.idea/
+.vscode/
+*.iml
+*.log
+local/
+*.jar
+!gradle/wrapper/gradle-wrapper.jar

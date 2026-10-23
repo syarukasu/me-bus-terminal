@@ -1,0 +1,22 @@
+plugins { id 'net.minecraftforge.gradle' }
+java { toolchain.languageVersion = JavaLanguageVersion.of(17) }
+base { archivesName = 'me-bus-terminal-forge-1.20.1' }
+sourceSets.main.java.srcDir '../common/src/main/java'
+sourceSets.main.resources.srcDir '../common/src/main/resources'
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    runs {
+        client { workingDirectory project.file('run'); mods { me_omnibus { source sourceSets.main } } }
+        server { workingDirectory project.file('run-server'); args '--nogui'; mods { me_omnibus { source sourceSets.main } } }
+    }
+}
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.4.20'
+    implementation fg.deobf('appeng:appliedenergistics2-forge:15.4.10')
+    runtimeOnly fg.deobf('org.appliedenergistics:guideme:20.1.7')
+}
+tasks.named('jar') { finalizedBy 'reobfJar' }
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('META-INF/mods.toml') { expand version: project.version }
+}

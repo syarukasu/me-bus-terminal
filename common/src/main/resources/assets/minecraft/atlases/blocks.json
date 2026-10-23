@@ -1,0 +1,5 @@
+{
+  "sources": [
+    { "type": "minecraft:directory", "source": "gui/ae2_1211", "prefix": "gui/ae2_1211/" }
+  ]
+}

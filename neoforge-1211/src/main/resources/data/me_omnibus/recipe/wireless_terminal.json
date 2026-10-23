@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    { "item": "me_omnibus:terminal" },
+    { "item": "ae2:wireless_receiver" },
+    { "item": "ae2:dense_energy_cell" }
+  ],
+  "result": { "id": "me_omnibus:wireless_terminal", "count": 1 }
+}

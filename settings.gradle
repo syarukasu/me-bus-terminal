@@ -1,0 +1,3 @@
+pluginManagement { repositories { gradlePluginPortal(); maven { url = 'https://maven.minecraftforge.net' } } }
+rootProject.name = 'me-omnibus-terminal'
+include 'forge-1201', 'neoforge-1211'

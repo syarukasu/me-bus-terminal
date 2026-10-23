@@ -1,0 +1,16 @@
+plugins {
+    id 'net.minecraftforge.gradle' version '6.0.54' apply false
+    id 'net.neoforged.moddev' version '2.0.143' apply false
+}
+allprojects {
+    group = 'com.syaru.meomnibus'
+    version = '0.1.0-dev.4'
+    repositories { mavenCentral(); maven { url = 'https://modmaven.dev' } }
+}
+subprojects {
+    tasks.withType(JavaCompile).configureEach { options.encoding = 'UTF-8' }
+    tasks.withType(Jar).configureEach {
+        from rootProject.file('LICENSE')
+        from rootProject.file('THIRD_PARTY_NOTICES.md')
+    }
+}
